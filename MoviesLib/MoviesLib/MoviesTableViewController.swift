@@ -85,19 +85,42 @@ class MoviesTableViewController: UITableViewController {
         
         
                
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MovieTableViewCell
 
         let movie = movies[indexPath.row]
-        cell.textLabel?.text = movie.title
-        cell.detailTextLabel?.text = "⭐️ \(movie.rating) / 10"
         
+        //cell.textLabel?.text = movie.title
+        //cell.detailTextLabel?.text = "⭐️ \(movie.rating) / 10"
         
+        cell.ivPoster.image = UIImage(named: movie.imageSmall)
+        cell.lbTitle.text = movie.title
+        cell.lbSummary.text = movie.summary
+        cell.lbRating.text = "⭐️ \(movie.rating) / 10"
         
         // Configure the cell...
 
         return cell
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Selecionei a cell de indice \(indexPath.row)")
+    }
  
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         print("to segue")
+        let vc = segue.destination as! MovieViewController
+        
+        let movie =  movies[tableView.indexPathForSelectedRow!.row]
+        
+        vc.movie = movie
+
+        
+    
+        //vc.movie
+    
+    }
     
     
     

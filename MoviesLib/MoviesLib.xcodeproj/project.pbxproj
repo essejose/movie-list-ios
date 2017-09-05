@@ -38,6 +38,7 @@
 		AC7700251F5E104E00C50D49 /* suicidesquad-wide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC77000B1F5E104E00C50D49 /* suicidesquad-wide.jpg */; };
 		AC7700261F5E104E00C50D49 /* sully-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC77000C1F5E104E00C50D49 /* sully-small.jpg */; };
 		AC7700271F5E104E00C50D49 /* sully-wide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC77000D1F5E104E00C50D49 /* sully-wide.jpg */; };
+		AC7700291F5E323D00C50D49 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7700281F5E323D00C50D49 /* MovieTableViewCell.swift */; };
 		AC77FFEC1F5E0BAF00C50D49 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77FFEB1F5E0BAF00C50D49 /* MoviesTableViewController.swift */; };
 		AC77FFEE1F5E0E0500C50D49 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = AC77FFED1F5E0E0500C50D49 /* movies.json */; };
 		AC77FFF21F5E0E8600C50D49 /* movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77FFF11F5E0E8600C50D49 /* movie.swift */; };
@@ -65,6 +66,7 @@
 		AC77000B1F5E104E00C50D49 /* suicidesquad-wide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "suicidesquad-wide.jpg"; sourceTree = "<group>"; };
 		AC77000C1F5E104E00C50D49 /* sully-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sully-small.jpg"; sourceTree = "<group>"; };
 		AC77000D1F5E104E00C50D49 /* sully-wide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sully-wide.jpg"; sourceTree = "<group>"; };
+		AC7700281F5E323D00C50D49 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		AC77FFEB1F5E0BAF00C50D49 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
 		AC77FFED1F5E0E0500C50D49 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
 		AC77FFF11F5E0E8600C50D49 /* movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = movie.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				07780D581E6D860E00BC3630 /* Info.plist */,
 				AC77FFEB1F5E0BAF00C50D49 /* MoviesTableViewController.swift */,
 				AC77FFF11F5E0E8600C50D49 /* movie.swift */,
+				AC7700281F5E323D00C50D49 /* MovieTableViewCell.swift */,
 			);
 			path = MoviesLib;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7700291F5E323D00C50D49 /* MovieTableViewCell.swift in Sources */,
 				AC77FFEC1F5E0BAF00C50D49 /* MoviesTableViewController.swift in Sources */,
 				07780D4F1E6D860E00BC3630 /* MovieViewController.swift in Sources */,
 				AC77FFF21F5E0E8600C50D49 /* movie.swift in Sources */,
